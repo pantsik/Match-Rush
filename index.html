@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Match Rush</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="AUTHOR" content="Panos Tsikogiannopoulos" />
+    <meta name="KEYWORDS" content="Match 3, tiles, fast" />
+    <meta name="DESCRIPTION" content="Match 3 tiles to remove them. Don't let the tiles reach the bottom of your screen." />
+    <meta name="google-signin-client_id" content="588677398978-qviv6vbj418eueum7eppncsjb0g83tp3.apps.googleusercontent.com"> <!-- Web client for sign in to google -->
+    <!-- <meta name="google-signin-client_id" content="1023396835768-8cluojplet82fl2hvuj2aq3fi3tevnj7.apps.googleusercontent.com"> --> <!-- Android client for sign in to google -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!--    <script src="https://accounts.google.com/gsi/client" async defer></script> <!- Old for sign in to google -> -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script> <!-- New for sign in to google -->
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_qCR7E72WNe13QFiRp0fRC");
+    })();
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25249759-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-25249759-1');
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25249759-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </head>
+  <body>
+    <div id="p5_loading" class="loadingclass"><h1>Match Rush is loading...</h1></div>
+
+    <script type="text/javascript" src="MatchRushItchio.js"></script>
+
+    <div id="google_sign_in" style="display:none"> <!-- Google Sign-in button -->
+      <div class="g-signin2" data-onsuccess="onSignIn"> <!-- New Google Sign-in button -->
+      </div>
+    </div>
+  </body>
+</html>

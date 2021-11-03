@@ -1,0 +1,54 @@
+html, body {
+  margin: auto;
+  /*padding: 0;
+  overflow: hidden; /* Hide scrollbars */
+  height: 100%;     /* Για να μην γίνεται scrolling */
+  touch-action: none; /* Για να μην κινείται ο canvas όταν γίνεται drag */
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+  background-color: rgb(0, 0, 60);
+  color: rgb(255, 255, 255);
+}
+canvas {
+  display: block;
+  margin: auto;
+  height: 100%;     /* Για να μην γίνεται scrolling */
+  touch-action: none; /* Για να μην κινείται ο canvas όταν γίνεται drag */
+}
+.loadingclass {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modes {
+  color: rgb(0, 200, 245);
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+.inputbox {
+  font-family: "Arial Narrow Bold";
+  font-weight: normal;
+  background-color: rgb(48, 98, 213);
+  color: white;
+  border: none;
+}
+.inputbox:focus {
+  outline: none;
+}
+.inputbox::selection {
+    background: grey;
+}
+
+@font-face {font-family: "Arial Narrow Bold"; src: url("ARIALNB.TTF") format("truetype"); }
